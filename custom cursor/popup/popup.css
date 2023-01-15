@@ -1,3 +1,13 @@
+.pet_picture {
+  width: 100px;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+}
+
 body {
   width: max-content;
   margin: 0;

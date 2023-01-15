@@ -1,47 +1,51 @@
-.blocker-block {
-  /* Positioning for children */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /* Specify initial position and dimensions */
+.page-pet__container {
+  top: 0px;
   position: absolute;
-  top: calc(50vh - 150px);
-  left: calc(50vw - 150px);
-  height: 300px;
-  width: 300px;
-
-  /* Set color to inherit from container */
-  background-color: inherit;
-
-  /* Make it resizable */
-  resize: both;
-  overflow: auto;
-}
-
-.blocker-block:hover * {
-  display: block;
-}
-
-/* .blocker-block:hover {
-  outline: 1px solid black;
-} */
-
-.invisible {
-  display: none;
-}
-
-.blockContainer {
-  /* Position */
-  top: 0;
-  position: fixed;
   z-index: 1000000000;
-
-  /* Inherit background color so blocks can also inherit */
-  background-color: inherit;
+  cursor: pointer;
 }
 
-button {
-  display: none;
+.animate{
+  animation: float 10s;
+
 }
+
+.inside-container {
+  position: relative;
+}
+
+
+.page-pet {
+  width: 200px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.remove-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.x {
+  animation: x 13s linear infinite alternate;
+}
+.y {
+  animation: y 7s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 200px));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 250px));
+  }
+}
+ 
