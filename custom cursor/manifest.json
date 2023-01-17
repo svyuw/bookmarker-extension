@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "sarah's custom cursor!",
-    "description": "get a custom cursor!",
+    "name": "seal page pet",
+    "description": "get a page pet!",
     "version": "1.0",
     "action": {
         "default_popup": "popup/popup.html",
-        "default_icon": "images/icon-32.png"
+        "default_icon": "images/peticon.png"
     },
     "content_scripts": [
         {
